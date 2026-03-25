@@ -118,7 +118,17 @@ export default function RootLayout() {
       <Stack.Screen name="(tabs)"       options={{ headerShown: false }} />
       <Stack.Screen name="auth"         options={{ headerShown: false }} />
       <Stack.Screen name="onboarding"   options={{ headerShown: false }} />
-      <Stack.Screen name="settings"     options={{ headerShown: false }} />
+      <Stack.Screen
+        name="settings"
+        options={{
+          headerShown:          true,
+          headerStyle:          { backgroundColor: '#ffffff' },
+          headerTintColor:      '#0f172a',
+          headerTitleStyle:     { fontWeight: '700', fontSize: 17 },
+          headerBackButtonDisplayMode: 'minimal',
+          headerShadowVisible:  false,
+        }}
+      />
       <Stack.Screen
         name="curriculum"
         options={{
